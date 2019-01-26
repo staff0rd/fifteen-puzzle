@@ -1,0 +1,116 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@nobrainr/typescript_universal-webpack-karma_jasmine@^1.0.0",
+        "scope": "@nobrainr",
+        "escapedName": "@nobrainr%2ftypescript_universal-webpack-karma_jasmine",
+        "name": "@nobrainr/typescript_universal-webpack-karma_jasmine",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "C:\\Users\\stafford\\AppData\\Roaming\\npm-cache\\_npx\\16276\\node_modules\\create-ts-lib"
+    ]
+  ],
+  "_from": "@nobrainr/typescript_universal-webpack-karma_jasmine@>=1.0.0 <2.0.0",
+  "_hasShrinkwrap": false,
+  "_id": "@nobrainr/typescript_universal-webpack-karma_jasmine@1.0.0",
+  "_inCache": true,
+  "_location": "/@nobrainr/typescript_universal-webpack-karma_jasmine",
+  "_nodeVersion": "8.10.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/typescript_universal-webpack-karma_jasmine_1.0.0_1538106300939_0.9346359489080889"
+  },
+  "_npmUser": {
+    "name": "emyann",
+    "email": "renaudin.yann@gmail.com"
+  },
+  "_npmVersion": "6.2.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@nobrainr/typescript_universal-webpack-karma_jasmine@^1.0.0",
+    "scope": "@nobrainr",
+    "escapedName": "@nobrainr%2ftypescript_universal-webpack-karma_jasmine",
+    "name": "@nobrainr/typescript_universal-webpack-karma_jasmine",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/@nobrainr/typescript_universal-webpack-karma_jasmine/-/typescript_universal-webpack-karma_jasmine-1.0.0.tgz",
+  "_shasum": "1c7e50d285c3427fd7ddb716147fc558b3d55754",
+  "_shrinkwrap": null,
+  "_spec": "@nobrainr/typescript_universal-webpack-karma_jasmine@^1.0.0",
+  "_where": "C:\\Users\\stafford\\AppData\\Roaming\\npm-cache\\_npx\\16276\\node_modules\\create-ts-lib",
+  "author": "",
+  "dependencies": {},
+  "description": "",
+  "devDependencies": {
+    "@types/jasmine": "^2.5.53",
+    "awesome-typescript-loader": "^5.2.0",
+    "cross-env": "^5.0.1",
+    "css-loader": "^1.0.0",
+    "ejs-loader": "^0.3.0",
+    "eslint": "^5.4.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "istanbul-instrumenter-loader": "^3.0.0",
+    "jasmine": "^3.2.0",
+    "jasmine-core": "^3.2.1",
+    "karma": "^3.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage-istanbul-reporter": "^2.0.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "0.0.32",
+    "karma-webpack": "^3.0.0",
+    "rimraf": "^2.6.1",
+    "source-map-loader": "^0.2.1",
+    "style-loader": "^0.22.1",
+    "tslint": "^5.5.0",
+    "tslint-loader": "^3.5.3",
+    "typescript": "^3.0.1",
+    "webpack": "^4.17.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dist": {
+    "integrity": "sha512-yt9IFFFsnYn0KwZxqKehMPyN/RpyF8tP8U7uJqj0yFrqox5Pxedv9h+aTWNzIGVGNbaihC6STzQokEzQQeNIfQ==",
+    "shasum": "1c7e50d285c3427fd7ddb716147fc558b3d55754",
+    "tarball": "https://registry.npmjs.org/@nobrainr/typescript_universal-webpack-karma_jasmine/-/typescript_universal-webpack-karma_jasmine-1.0.0.tgz",
+    "fileCount": 10,
+    "unpackedSize": 7995,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbraO9CRA9TVsSAnZWagAAtZUQAIyd1Lupffu9pqCKF23x\njU8QuPRpR0q4roSTpngimbjmMOfSyNJybkvwV1ponJZOQGiHJ9aoHGHUj5SF\nE3OL2WCr+A+tTQ9t0K+QvBTVLU+eWp/utRlHlz9eaAw6AQQPXx3pTCpmr4gR\ng2V2Ma/4TRR7J/fLdXNGw56+9g2cXVBPCkUjIZWXYiCmBwdKxga3dfQ+fQJH\n9zNw8HFoITDRB2g61CmL2u0q5Bjg4MwTeBx7ceTJ2kSgZb8j9f7JVmCnsHVO\nBsCx9V1y3gjkW8/QBF3uMTm9/EGYqHlK0gA1hEuXOslDFZeYIKORPu1nYR16\nwiDAW9H7k7MaT4zcovtGzvkOEdE0+aTLNydkQrjggoOmOoTxePjU9ZEVFX4D\n+5fmlTPAlYOomQ8e54+0HU3LvIhBFYa5WwxxBWBHUDXPRY8tfT71GNDP25lB\nZGboaywArVe1J9gNYZba2zV+cJQX2jNIbfgxD/a0/c1JyEXDdgw8aG4LGimg\n4hS2HpWqgxebUllj33rfEVxw818i1Dp6x4Eyz9l0mzT3CUFETTVJMmMHo/aL\njCbNFvowqoiTOnmwvk0Zo/i4xzvzddq8KD9NKOrnxZ0i4VvS2TJO3tMId2GI\nsGpUdnD/+Yl5yDUlPfmP1g0Y8tjzNjyR9EWEeQp2suMxI0pLHv5U5PTHzFTj\nE7Sa\r\n=oWj8\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "license": "ISC",
+  "main": "src/index.ts",
+  "maintainers": [
+    {
+      "name": "emyann",
+      "email": "renaudin.yann@gmail.com"
+    }
+  ],
+  "name": "fifteen-puzzle",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "build": "npm run build:prod",
+    "build:dev": "webpack --mode development --config ./webpack.config.js --progress --color --display-error-details",
+    "build:prod": "cross-env NODE_ENV=production webpack --mode production --config ./webpack.config.js  --progress  --color --display-error-details --bail",
+    "clean": "npm cache clear && rimraf -- dist",
+    "server": "npm run server:dev",
+    "server:dev": "webpack-dev-server --mode development --config ./webpack.config.js --hot --inline --progress --watch --open",
+    "server:prod": "cross-env NODE_ENV=production webpack-dev-server  --mode production --config ./webpack.config.js --port 3000 --host 0.0.0.0 --hot --inline --progress  --watch --open --content-base dist/",
+    "start": "npm run server:dev",
+    "test": "karma start"
+  },
+  "version": "0.0.1"
+}
