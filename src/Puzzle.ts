@@ -20,7 +20,6 @@ export class Puzzle {
     private _blockDrawSize: number;
 
     public get view() { return this._pixi.view;}
-
     
     constructor(drawSize: number, blockManager: BlockManager) {
         this._puzzleDrawSize = drawSize;
