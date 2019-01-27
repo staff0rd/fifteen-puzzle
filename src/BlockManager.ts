@@ -1,9 +1,5 @@
 import { Block } from './Block';
-
-interface Point {
-    x: number;
-    y: number;
-}
+import { shuffle } from './shuffle';
 
 export class BlockManager {
     private _blocks: Block[];
@@ -13,6 +9,8 @@ export class BlockManager {
         this._size = size;
 
         this.init();
+
+        this._blocks = shuffle(this._blocks);
     }
 
     public get blocks() { return this._blocks };

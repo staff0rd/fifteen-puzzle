@@ -1,8 +1,6 @@
-import { MyLibrary } from './MyLibrary';
+import { BlockManager } from './BlockManager';
 
-console.log('See this in your browser console: Typescript Webpack Starter Launched');
+console.log('Startup');
 
-const myLibrary = new MyLibrary();
-const result = myLibrary.executeDependency();
+const manager = new BlockManager(4);
 
-console.log(`A random number ${result}`);
