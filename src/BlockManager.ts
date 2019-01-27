@@ -1,5 +1,7 @@
 import { Block } from './Block';
-import { shuffle } from './shuffle';
+import { shuffle } from './utils/shuffle';
+import { Point } from 'pixi.js';
+import { convertIndexToPoint } from './utils/convertIndexToPoint';
 
 export class BlockManager {
     private _blocks: Block[];
@@ -10,10 +12,11 @@ export class BlockManager {
 
         this.init();
 
-        this._blocks = shuffle(this._blocks);
+        this.shuffle();
     }
 
     public get blocks() { return this._blocks };
+    public get puzzleSize() { return this._size};
 
     init() {
         this._blocks = [];
@@ -26,5 +29,17 @@ export class BlockManager {
                     this._blocks.push(new Block(x + y * this._size, x, y));
             }
         }
+    }
+
+    shuffle() {
+        const shuffled = shuffle(this._blocks);
+        shuffled.forEach((block, index) => {
+            if (block) { // ignore empty one
+                const point = convertIndexToPoint(index, this._size);
+                block.x = point.x;
+                block.y = point.y;
+            }
+        });
+        this._blocks = shuffled;
     }
 }

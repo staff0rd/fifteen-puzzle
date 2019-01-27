@@ -1,6 +1,8 @@
 import { BlockManager } from './BlockManager';
-
-console.log('Startup');
+import { Puzzle } from './Puzzle';
 
 const manager = new BlockManager(4);
 
+const puzzle = new Puzzle(500, manager);
+
+document.body.appendChild(puzzle.view);
