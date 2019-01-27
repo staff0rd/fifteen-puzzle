@@ -34,23 +34,35 @@ export class Puzzle {
     init(blockManager: BlockManager) {
         const nonEmpty = blockManager.blocks.filter(block => block); // we don't need to draw the empty one
         this._blocks = nonEmpty.map(block => {
-            const graphics = new PIXI.Graphics();
-            graphics.beginFill(BLOCK_COLOR);
-            graphics.drawRect(0, 0, this._blockDrawSize, this._blockDrawSize);
-            graphics.endFill();
-
-            const number = new PIXI.Text(block.id.toString(), { fontFamily: 'Arial', fontSize: this._blockDrawSize / 2, fill: FONT_COLOR });
-            number.anchor.set(0.5);
-            number.position.set(this._blockDrawSize/2);
-
-            const container = new PIXI.Container();
-            container.addChild(graphics);
-            container.addChild(number);
+            const container = this.buildContainer(block);
+            container.interactive = true;
+            container.buttonMode = true;
+            container.on('pointertap', () => {
+                blockManager.tap(block);
+                this.arrange();
+            });
 
             this._pixi.stage.addChild(container);
 
             return { block: block, container: container };
         });
+    }
+
+    buildContainer(block: Block) {
+        const graphics = new PIXI.Graphics();
+        graphics.beginFill(BLOCK_COLOR);
+        graphics.drawRect(0, 0, this._blockDrawSize, this._blockDrawSize);
+        graphics.endFill();
+
+        const number = new PIXI.Text(block.id.toString(), { fontFamily: 'Arial', fontSize: this._blockDrawSize / 2, fill: FONT_COLOR });
+        number.anchor.set(0.5);
+        number.position.set(this._blockDrawSize/2);
+
+        const container = new PIXI.Container();
+        container.addChild(graphics);
+        container.addChild(number);
+
+        return container;
     }
 
     arrange() {

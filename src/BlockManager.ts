@@ -42,4 +42,8 @@ export class BlockManager {
         });
         this._blocks = shuffled;
     }
+
+    tap(block: Block) {
+        console.log('you tapped ', block);
+    }
 }
