@@ -30,7 +30,7 @@ export class Puzzle {
         this.arrange();
     }
 
-    init(blockManager: BlockManager) {
+    private init(blockManager: BlockManager) {
         const nonEmpty = blockManager.blocks.filter(block => block); // we don't need to draw the empty one
         this._blocks = nonEmpty.map(block => {
             const container = this.buildContainer(block);
@@ -47,7 +47,7 @@ export class Puzzle {
         });
     }
 
-    buildContainer(block: Block) {
+    private buildContainer(block: Block) {
         const graphics = new PIXI.Graphics();
         graphics.beginFill(BLOCK_COLOR);
         graphics.drawRect(0, 0, this._blockDrawSize, this._blockDrawSize);
@@ -64,7 +64,7 @@ export class Puzzle {
         return container;
     }
 
-    arrange() {
+    private arrange() {
         this._blocks.forEach(block => {
             block.container.position.set(
                 LEFT_MARGIN + (this._blockDrawSize + PADDING) * block.block.x, 

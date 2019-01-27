@@ -19,7 +19,7 @@ export class BlockManager {
     public get blocks() { return this._blocks };
     public get puzzleSize() { return this._size};
 
-    init() {
+    private init() {
         this._blocks = [];
 
         for (let y = 0; y < this._size; y++) {
@@ -32,7 +32,7 @@ export class BlockManager {
         }
     }
 
-    shuffle() {
+    private shuffle() {
         const shuffled = shuffle(this._blocks);
         shuffled.forEach((block, index) => {
             if (block) { // ignore empty one
@@ -71,7 +71,7 @@ export class BlockManager {
         this.sort(tappedLocation.y * this._size + tappedLocation.x);
     }
 
-    sort(emptyIndex: number) {
+    private sort(emptyIndex: number) {
         const blocks: Block[] = [];
         for (let y = 0; y < this._size; y++) {
             for (let x = 0; x < this._size; x++) {

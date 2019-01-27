@@ -5,8 +5,8 @@ export declare class BlockManager {
     constructor(size: number, blocks?: Block[]);
     readonly blocks: Block[];
     readonly puzzleSize: number;
-    init(): void;
-    shuffle(): void;
+    private init;
+    private shuffle;
     tap(block: Block): void;
-    sort(emptyIndex: number): void;
+    private sort;
 }
